@@ -1,6 +1,6 @@
 ### Peer Assessments/Getting and Cleaning Data Course Project
 ### Code Book :
-##### Author: Anthony Wynn(Nguyen) (https://github.com/)
+##### Author: Anthony Wynn(Nguyen) (https://github.com/AnthonyRr)
 #### Rev 1.0 Date May 25, 2014
 ### _________________________________________________________________________________________________________
 
@@ -52,6 +52,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
   *  Transform the values of joinLabel according to the activity data frame.
   *  Combine the joinSubject, joinLabel and joinData by column to get a new cleaned 10299x68 data frame, cleanedData. Properly name the first two columns, "TestSubjectID" and "activityName". The "subject" column contains integers that range from 1 to 30 inclusive; the "activityName" column contains 6 kinds of activity names; the last 66 columns contain measurements that range from -1 to 1 exclusive.
   *  Write the cleanedData out to "OutputActivityDataSeet.txt and *.csv" file in current working directory.
+      (I found OutputActivityDataSeet.csv is easier to view then *.txt)
   
   str(outputDescActivity)
 'data.frame':  10299 obs. of  68 variables:
@@ -127,7 +128,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
    -      fBodyBodyGyroJerkMagStd : num  -0.991 -0.996 -0.995 -0.995 -0.995 ...> 
   
   *  Finally, generate a second independent tidy data set with the average of each measurement for each activity and each subject. We have 30 unique subjects and 6 unique activities, which result in a 180 combinations of the two. Then, for each combination, we calculate the mean of each measurement with the corresponding combination. So, after initializing the result data frame and performing the two for-loops, we get a 180x68 data frame.
-  *  Write the result out to "AvgSecondTidyDatSet.txt" file in current working directory.
+  *  Write the result out to "AvgSecondTidyDatSet.csv and .txt" file in current working directory. (I found AvgSecondTidyDatSet.csv is easier to view then *.txt)
   
   'data.frame':  180 obs. of  68 variables:
    -      testSubjectID           : int  1 1 1 1 1 1 2 2 2 2 ...
@@ -199,5 +200,3 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
    -      fBodyBodyGyroJerkMagMean: num  -0.319 -0.635 -0.282 -0.99 -0.995 ...
    -      fBodyBodyGyroJerkMagStd : num  -0.382 -0.694 -0.392 -0.987 -0.995 ...
 
-
-  
