@@ -27,7 +27,7 @@ Good luck!
 1. Use RStudio open R script  run_analysis.r
 2. Set working directory like below 
 3. Execute R script from RStudio  
-4. The code can be view via run_analysis.r or from R Markdown file, run_analysis.Rmd.
+4. The code can be view via run_analysis.r 
 
 ### Outputs
   * outputActivityDatSet.csv, outputActivityDatSet.txt (Extrac, merge training and test dataset. I *.csv and *.txt, and both files share the same data, I refer *.csv instead of *.txt because of easier to view. )
